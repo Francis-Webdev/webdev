@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Game Layout</title>
+    <style>
+        body {
+            width: 3000px;
+            height: 3000px;
+            margin: 0;
+            background: linear-gradient(to bottom, #e0e0e0, #c0c0c0);
+            position: relative;
+        }
+
+        /* Player Block */
+        .player {
+            width: 60px;
+            height: 60px;
+            background-color: blue;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            border-radius: 10px;
+        }
+
+        /* Obstacles */
+        .obstacle {
+            position: absolute;
+            border: 3px solid white;
+        }
+
+        .obs1 {
+            width: 220px;
+            height: 180px;
+            background-color: darkgray;
+            top: 450px;
+            left: 620px;
+        }
+
+        .obs2 {
+            width: 160px;
+            height: 160px;
+            background-color: dimgray;
+            top: 1150px;
+            left: 850px;
+        }
+
+        .obs3 {
+            width: 120px;
+            height: 280px;
+            background-color: gray;
+            top: 1750px;
+            left: 1180px;
+        }
+
+        .obs4 {
+            width: 270px;
+            height: 120px;
+            background-color: black;
+            top: 2150px;
+            left: 550px;
+        }
+
+        .obs5 {
+            width: 190px;
+            height: 190px;
+            background-color: darkslategray;
+            top: 680px;
+            left: 1480px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Player Block -->
+    <div class="player"></div>
+
+    <!-- Obstacles -->
+    <div class="obstacle obs1"></div>
+    <div class="obstacle obs2"></div>
+    <div class="obstacle obs3"></div>
+    <div class="obstacle obs4"></div>
+    <div class="obstacle obs5"></div>
+
+</body>
+</html>
