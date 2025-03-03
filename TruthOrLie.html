@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Truths and One Lie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .statement {
+            display: block;
+            width: 300px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Two Truths and One Lie</h2>
+        <p>If it turns green, it's true. If red, it's false.</p>
+
+    <button class="statement" id="s1">I have a mountain bike.</button>
+    <button class="statement" id="s2">I have 3 brothers.</button>
+    <button class="statement" id="s3">I love Valorant.</button>
+
+    <script>
+        document.getElementById("s1").onclick = function() {
+            this.style.background = "green";
+        };
+
+        document.getElementById("s2").onclick = function() {
+            this.style.background = "green";
+        };
+
+        document.getElementById("s3").onclick = function() {
+            this.style.background = "red";
+        };
+    </script>
+
+</body>
+</html>
